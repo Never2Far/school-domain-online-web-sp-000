@@ -14,12 +14,15 @@ def add_student(name, grade)
   #   @roster[grade] << name
   # else
 
-    @roster[grade] << name
+    @roster[:grade] << name
   # end
 end
 
 def grade(grade)
   return @roster[grade]
 end
+
+
+def sort
 
 end
