@@ -26,11 +26,10 @@ end
 
 
 def sort
-  # @roster.each_key { |grade|
-  #   @roster[grade].sort
-  #
-  # }
-  @roster.sort_by(values)
+  @roster.each { |grade, student_list|
+    @roster[grade] = @roster[grade].sort
+  
+  }
   return @roster
 end
 
