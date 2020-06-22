@@ -5,7 +5,7 @@ def initialize(name)
   @roster = {}
 end
 
-attr_reader :name
+attr_reader :name, :roster
 
 def add_student(name, grade)
 
@@ -17,6 +17,8 @@ def add_student(name, grade)
     @roster[:grade] << name
   # end
 end
+
+
 
 def grade(grade)
   return @roster[grade]
