@@ -28,8 +28,9 @@ end
 def sort
   @roster.each_key { |grade|
     @roster[grade].sort
-    return @roster
+    
   }
+  return @roster
 end
 
 end
